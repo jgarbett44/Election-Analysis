@@ -13,7 +13,7 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("..", "Resources", "election_results.csv")
 # Add a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+file_to_save = os.path.join("analysis", "election_results.txt")
 
 # Initialize a total vote counter.
 total_votes = 0
@@ -118,7 +118,7 @@ with open(file_to_save, "w") as txt_file:
             winning_percentage = vote_percentage
 
     # 7: Print the county with the largest turnout to the terminal.
-     winning_county_summary = (
+    winning_county_summary = (
         f"-------------------------\n"
         f"County with Largest Turnout: {winning_county}\n"
         f"Vote Count: {winning_count:,}\n"
@@ -141,6 +141,7 @@ with open(file_to_save, "w") as txt_file:
         # Print each candidate's voter count and percentage to the
         # terminal.
         print(candidate_results)
+        
         #  Save the candidate results to our text file.
         txt_file.write(candidate_results)
 
@@ -149,7 +150,8 @@ with open(file_to_save, "w") as txt_file:
             winning_count = votes
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
-
+    
+        print(candidate_name)
     # Print the winning candidate (to terminal)
     winning_candidate_summary = (
         f"-------------------------\n"
