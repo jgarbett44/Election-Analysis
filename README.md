@@ -1,10 +1,10 @@
-# **Election-Analysis**
+# **Election Analysis**
 
 ## *Overview of Election Audit*
 
 Our task is to create a vote count report to certify a congressional election in Colorado. Election results were provided as data in CSV format, consisting of a number for the ballot ID and a name for the county and candidate, respectively. Python was used to write algorithms that will assist the confirmation and analysis of election results.
 
-## *Results*
+## Results
 
 	-369,711 total votes were cast in this congressional election
 	-County breakdown:
@@ -18,6 +18,7 @@ Our task is to create a vote count report to certify a congressional election in
 		Diana DeGette: 73.8% (272,892)
 		Raymon Anthony Doane: 3.1% (11,606)
 
-## *Summary* 
+## Summary 
 
-	-With the Python script prepared, we can quickly tabulate winners and break down data by county. If we had other information, like city or party affiliation, we could modify the script to report it. For example, we could create a dictionary to hold the city as the key and the votes cast in each city as the values. With a for loop, we could retrieve the city name from each row, then use a decision statement with a logical operator to compile a city breakdown.
+	*With the Python script prepared, we can quickly tabulate winners and break down data by county.*
+		If we had city or party affiliation, we could modify the script to report it. For example, we could create a dictionary to hold the city as the key and the votes cast in each city as the values. With a for loop, we could retrieve the city name from each row, then use a decision statement with a logical operator to compile a city breakdown.
