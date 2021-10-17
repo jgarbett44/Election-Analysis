@@ -5,6 +5,11 @@
 import csv
 import os
 
+BALLOT_ID_COL_IDX = 0
+COUNTY_COL_IDX = 1
+CANDIDATE_COL_IDX = 2
+
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("..", "Resources", "election_results.csv")
 # Add a variable to save the file to a path.
@@ -18,7 +23,8 @@ candidate_options = []
 candidate_votes = {}
 
 # 1: Create a county list and county votes dictionary.
-
+county_options = []
+county_votes = {}
 
 
 # Track the winning candidate, vote count and percentage
@@ -27,7 +33,8 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-
+largestturnout_county = ""
+largestcountyvotes_count = 0
 
 
 # Read the csv and convert it into a list of dictionaries
@@ -44,10 +51,10 @@ with open(file_to_load) as election_data:
         total_votes = total_votes + 1
 
         # Get the candidate name from each row.
-        candidate_name = row[2]
+        candidate_name = row[CANDIDATE_COL_IDX]
 
         # 3: Extract the county name from each row.
-
+        county_name = row[COUNTY_COL_IDX]
 
         # If the candidate does not match any existing candidate add it to
         # the candidate list
@@ -65,15 +72,16 @@ with open(file_to_load) as election_data:
         # 4a: Write an if statement that checks that the
         # county does not match any existing county in the county list.
 
+        if county_name not in county_options:
 
             # 4b: Add the existing county to the list of counties.
-
+            county_options.append(county_name)
 
             # 4c: Begin tracking the county's vote count.
-
+            county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
-
+        county_votes[county_name] += 1
 
 
 # Save the results to our text file.
