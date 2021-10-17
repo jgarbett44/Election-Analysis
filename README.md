@@ -11,11 +11,12 @@ Our task is to create a vote count report to certify a congressional election in
 		Jefferson: 10.5% (38,855)
 		Denver: 82.8% (306,055)
 		Arapahoe: 6.7% (24,801)
-	-Denver had the largest number of votes (306,055)
+		*Denver had the largest number of votes (306,055)*
+		
+	-Diana DeGette won the election with 272,892 votes, 73% percentage of the total
 		Charles Casper Stockham: 23.0% (85,213)
 		Diana DeGette: 73.8% (272,892)
 		Raymon Anthony Doane: 3.1% (11,606)
-	-Diana DeGette won the election with 272,892 votes, 73% percentage of the total
 
 ## *Summary* 
 
