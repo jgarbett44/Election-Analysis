@@ -20,5 +20,5 @@ Our task is to create a vote count report to certify a congressional election in
 
 ## Summary 
 
-	*With the Python script prepared, we can quickly tabulate winners and break down data by county.*
-		If we had city or party affiliation, we could modify the script to report it. For example, we could create a dictionary to hold the city as the key and the votes cast in each city as the values. With a for loop, we could retrieve the city name from each row, then use a decision statement with a logical operator to compile a city breakdown.
+	With the Python script prepared, we can quickly tabulate winners and break down data by county.
+	With city or party affiliation data, we could modify the script to report it. For example, we could create a dictionary to hold the city as the key and the votes cast in each city as the values. With a for loop, we could retrieve the city name from each row, then use a decision statement with a logical operator to compile a city breakdown.
